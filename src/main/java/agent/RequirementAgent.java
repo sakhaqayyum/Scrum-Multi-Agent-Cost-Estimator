@@ -1,13 +1,21 @@
-package com.scrum;
+package com.scrum.estimator.agent;
 
-import java.util.*;
-import java.util.regex.Pattern;
+import com.scrum.estimator.domain.Requirement;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Locale;
+import java.util.Set;
 
 /**
  * Lightweight rule-based requirement analysis agent.
  * This is a prototype: it does not perform full linguistic NLP.
  */
 public class RequirementAgent {
+    static final String DEFAULT_VERB = "analyze";
+    static final String DEFAULT_NOUN = "requirement";
+
     private static final Set<String> VERBS = Set.of(
             "manage", "create", "add", "update", "delete", "remove", "view",
             "display", "generate", "calculate", "estimate", "save", "store",
@@ -34,28 +42,33 @@ public class RequirementAgent {
             String sentence = raw.trim();
             if (sentence.isEmpty()) continue;
 
-            List<String> words = Arrays.stream(
-                    sentence.toLowerCase(Locale.ROOT)
-                            .replaceAll("[^a-z0-9\\s-]", " ")
-                            .split("\\s+"))
-                    .filter(w -> !w.isBlank())
-                    .toList();
-
-            String verb = words.stream()
-                    .filter(VERBS::contains)
-                    .findFirst().orElse("analyze");
-
-            String noun = words.stream()
-                    .filter(w -> w.matches("[a-z][a-z0-9-]{2,}"))
-                    .filter(w -> !NOUN_STOP_WORDS.contains(w))
-                    .filter(w -> !VERBS.contains(w))
-                    .findFirst().orElse("requirement");
-
+            List<String> words = tokenize(sentence);
             // Keep the original sentence as the task description.
-            results.add(new Requirement(sentence, verb, noun));
+            results.add(new Requirement(sentence, findVerb(words), findNoun(words)));
         }
         return results;
     }
 
-    public record Requirement(String sentence, String verb, String noun) {}
+    private static List<String> tokenize(String sentence) {
+        return Arrays.stream(
+                        sentence.toLowerCase(Locale.ROOT)
+                                .replaceAll("[^a-z0-9\\s-]", " ")
+                                .split("\\s+"))
+                .filter(w -> !w.isBlank())
+                .toList();
+    }
+
+    private static String findVerb(List<String> words) {
+        return words.stream()
+                .filter(VERBS::contains)
+                .findFirst().orElse(DEFAULT_VERB);
+    }
+
+    private static String findNoun(List<String> words) {
+        return words.stream()
+                .filter(w -> w.matches("[a-z][a-z0-9-]{2,}"))
+                .filter(w -> !NOUN_STOP_WORDS.contains(w))
+                .filter(w -> !VERBS.contains(w))
+                .findFirst().orElse(DEFAULT_NOUN);
+    }
 }
