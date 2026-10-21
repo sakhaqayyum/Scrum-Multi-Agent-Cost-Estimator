@@ -1,12 +1,11 @@
 # Scrum Multi-Agent Cost Estimator
 <p>
 <img src="https://github.com/user-attachments/assets/1d96fa8e-1d57-40a8-8c39-36c8678a65f6" alt="Image 1" style="margin-right: 10px; margin-bottom: 10px;> 
- <img src="https://github.com/user-attachments/assets/42da7c51-e0aa-45bc-ac07-536f55d78e27" alt="Image 1" style="margin-right: 10px; margin-bottom: 10px;" > 
- <img src="https://github.com/user-attachments/assets/6519d4c3-45a0-4aae-abe4-fbba978e7b2e" alt="Image 1" style="margin-right: 10px; margin-bottom: 10px;> 
- <img src="https://github.com/user-attachments/assets/58bb7419-8ae7-46f3-8129-df5398d9627b" alt="Image 1" style="margin-right: 10px; margin-bottom: 10px;> 
- <img src="https://github.com/user-attachments/assets/f0f68827-31a6-4d90-871e-8bc885857505" alt="Image 1" style="margin-right: 10px; margin-bottom: 10px;> 
-
-   
+ 
+ <img src="https://github.com/user-attachments/assets/42da7c51-e0aa-45bc-ac07-536f55d78e27" alt="Image 2" style="margin-right: 10px; margin-bottom: 10px;" > 
+ <img src="https://github.com/user-attachments/assets/6519d4c3-45a0-4aae-abe4-fbba978e7b2e" alt="Image 3" style="margin-right: 10px; margin-bottom: 10px;> 
+ <img src="https://github.com/user-attachments/assets/58bb7419-8ae7-46f3-8129-df5398d9627b" alt="Image 4" style="margin-right: 10px; margin-bottom: 10px;> 
+ <img src="https://github.com/user-attachments/assets/f0f68827-31a6-4d90-871e-8bc885857505" alt="Image 5" style="margin-right: 10px; margin-bottom: 10px;>   
   </p>
 
 
