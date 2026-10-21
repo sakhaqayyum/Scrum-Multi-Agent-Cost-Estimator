@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS scrum_cost_db;
-USE scrum_cost_db;
+-- Applied automatically on startup by SchemaInitializer.
+-- The database itself is created by the JDBC URL option createDatabaseIfNotExist=true.
 
 CREATE TABLE IF NOT EXISTS projects (
     project_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS projects (
 CREATE TABLE IF NOT EXISTS tasks (
     task_id INT AUTO_INCREMENT PRIMARY KEY,
     project_id INT NOT NULL,
-    task_name VARCHAR(255) NOT NULL,
+    task_name TEXT NOT NULL,
     extracted_verb VARCHAR(100),
     extracted_noun VARCHAR(100),
     assigned_agent VARCHAR(100),
