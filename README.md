@@ -1,15 +1,14 @@
 # Scrum Multi-Agent Cost Estimator
-<p>
 <img src="https://github.com/user-attachments/assets/1d96fa8e-1d57-40a8-8c39-36c8678a65f6" alt="Image 1" style="margin-right: 10px; margin-bottom: 10px;> 
- 
- <img src="https://github.com/user-attachments/assets/42da7c51-e0aa-45bc-ac07-536f55d78e27" alt="Image 2" style="margin-right: 10px; margin-bottom: 10px;" > 
- <img src="https://github.com/user-attachments/assets/6519d4c3-45a0-4aae-abe4-fbba978e7b2e" alt="Image 3" style="margin-right: 10px; margin-bottom: 10px;> 
- <img src="https://github.com/user-attachments/assets/58bb7419-8ae7-46f3-8129-df5398d9627b" alt="Image 4" style="margin-right: 10px; margin-bottom: 10px;> 
- <img src="https://github.com/user-attachments/assets/f0f68827-31a6-4d90-871e-8bc885857505" alt="Image 5" style="margin-right: 10px; margin-bottom: 10px;>   
-  </p>
+
+<img src="https://github.com/user-attachments/assets/8e32cbbb-5dcf-4d43-b711-16e10a6c6ffc" alt="Image 2" style="margin-right: 10px; margin-bottom: 10px;> 
+
+<img src="https://github.com/user-attachments/assets/8e6c7152-ade9-4c28-8028-747e4af600f7" alt="Image 3" style="margin-right: 10px; margin-bottom: 10px;> 
 
 
+<img src="https://github.com/user-attachments/assets/5feb6d29-683a-4af8-9f54-f65d383d0da8" alt="Image 3" style="margin-right: 10px; margin-bottom: 10px;> 
 
+<img src="https://github.com/user-attachments/assets/7f725bcd-6543-4460-9dd9-5a7ffbb49fcf" alt="Image 3" style="margin-right: 10px; margin-bottom: 10px;> 
 
 
 A Java console application that reads a Software Requirements Specification (SRS), splits it into individual requirements, assigns each one to a specialised agent, and estimates the **hours, cost, and number of sprints** for the project using Scrum-style planning.
